@@ -22,12 +22,19 @@ This week started with our team continuing to learn more about creating our refl
 However, we may want to reflect the sunlight to somewhere that is not located above the center of the array, or perhaps somewhere even totally away from the array. In order to do this, we learned how to create an offset reflector array.
 
 The basic steps to creating these offset arrays are as follows:
+
       1. Create an initial line in space, the end of which contains the point (this point will be where we reflect sunlight)
+
       2. Create a starter surface, array this surface to create a grid-like pattern
+
       3. Create a plane above this surface and place center points of each grid “square” onto the surface (the height of the plane will be how tall each panel on the reflector array is)
+
       4. Create a plane between the point in space, and the center points of our “squares” and the center point on the plane above the square from step 3
+
       5. On this plane, draw one line vertically, another one lined up with the point in space, and a final line that bisects those two
+
       6. Create a plane along a path by choosing that line
+      
       7. Extrude the grid square to this plane, repeat for other squares.
 
 The end result of this process is a model that will actually change the angles/directions of all the faces in the array to reflect light to wherever the point in space is. The reflector array I created used a hexagon as the base shape.
